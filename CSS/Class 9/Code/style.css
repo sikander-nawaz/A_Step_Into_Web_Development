@@ -1,0 +1,30 @@
+/* * {
+  background-color: aqua;
+} */
+
+#heading {
+  color: brown;
+}
+
+.para1 {
+  text-decoration: underline;
+  color: red;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.para2 {
+  font-weight: 900;
+  text-align: center;
+  text-decoration: dotted;
+}
+
+#para3 {
+  text-align: right;
+  text-decoration: dashed;
+  line-height: 5rem;
+}
+
+a {
+  text-decoration: none;
+}

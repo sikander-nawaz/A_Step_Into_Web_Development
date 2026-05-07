@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Basics - Day 8</title>
+
+    <!-- 1. External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 2. Internal CSS -->
+    <style>
+      .internal-box {
+        background-color: #fff3cd;
+        border: 2px solid #ffc107;
+        padding: 40px 10px;
+        border-radius: 8px;
+        margin: 50px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .internal-box h2 {
+        color: #856404;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- External CSS applied to h1 and p -->
+    <h1>CSS Foundations</h1>
+    <p>This page demonstrates the three ways to apply CSS to an HTML document.</p>
+
+    <!-- Internal CSS -->
+    <div class="internal-box">
+      <h2>Internal CSS</h2>
+      <p>Styles written inside a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section. Applies to the current page only.</p>
+    </div>
+
+    <!-- External CSS -->
+    <div>
+      <h2 style="color: steelblue;">External CSS</h2>
+      <p>Styles written in a separate <code>.css</code> file and linked using a <code>&lt;link&gt;</code> tag. Reusable across multiple pages.</p>
+    </div>
+
+    <!-- Inline CSS -->
+    <div style="background-color: #d4edda; border: 10px solid #28a745; padding: 20px; border-radius: 20px; margin: 15px 5px;">
+      <h2 style="color: #9bb6a2;">Inline CSS</h2>
+      <p>Styles applied directly on an element using the <code>style</code> attribute. Highest specificity, but hardest to maintain.</p>
+    </div>
+
+  </body>
+</html>
