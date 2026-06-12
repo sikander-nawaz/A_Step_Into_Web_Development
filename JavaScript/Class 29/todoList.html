@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <body>
+        <!-- CRUD-> create, read, update, delete -->
+
+    <h1>Todo App</h1>
+
+    <input
+        type="text"
+        id="todoInput"
+        placeholder="Enter Todo"
+    >
+
+    <button id="addBtn">
+        Add Todo
+    </button>
+
+    <ul id="todoList">
+            list where todos will appear
+    </ul>
+
+</body>
+    <script>
+   const input =document.getElementById("todoInput");
+
+const addBtn =document.getElementById("addBtn");
+
+const todoList =document.getElementById("todoList");
+
+let todos = [];
+
+addBtn.addEventListener("click", addTodo);
+
+function addTodo() {
+// array [1,2,3,4,5] 6
+    const todoText =    input.value;
+
+    if (todoText.trim() === "") {
+        return;
+    }
+
+    const todo = {
+        id: Date.now(),
+        text: todoText
+    };
+    console.log(todo,"todo object")
+   
+//       []  [{id:"",text}]
+    todos.push(todo);
+     console.log(todos)
+
+    input.value = "";
+
+    renderTodos();
+}
+
+function renderTodos() {
+
+    todoList.innerHTML = "";
+
+    todos.forEach(function(todo) {
+
+        const li =document.createElement("li");
+
+        li.textContent = todo.text;
+
+        const editBtn = document.createElement("button");
+
+        editBtn.textContent =   "Update";
+
+        editBtn.addEventListener("click", function() {
+
+                input.value =todo.text;
+
+                todos = todos.filter(
+                    item =>
+                    item.id !== todo.id
+                );
+
+                renderTodos();
+            }
+        );
+
+        const deleteBtn =   document.createElement("button");
+
+        deleteBtn.textContent =   "Remove";
+
+        deleteBtn.addEventListener(
+            "click",
+            function() {
+
+                todos = todos.filter(
+                    item =>
+                    item.id !== todo.id
+                );
+
+                renderTodos();
+            }
+        );
+
+        li.appendChild(editBtn);
+        li.appendChild(deleteBtn);
+
+        todoList.appendChild(li);
+    });
+}
+    </script>
+</body>
+</html>

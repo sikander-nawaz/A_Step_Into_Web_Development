@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .blue{
+    color:blue
+  }
+  .big{
+    font-size: 120px;
+  }
+</style>
+<body>
+   <input type="text" id="username">
+  <p id="para">delete me</p>
+  <h1>Welcome</h1>
+  <p>This is a paragraph</p>
+  <h1 id="heading">Hello World</h1>
+
+  <p class="box">one box</p>
+  <p class="box">two box</p>
+  <p class="box">three box</p>
+  <a href="www.google.com">this is link tag</a>
+    
+    <h1>Heading</h1>
+    <h1>Another Heading</h1>
+
+    <div id="container">
+      <p>this is a container</p>
+    </div>
+
+      <div id="container2">
+        q
+      </div>
+
+     
+  <script>
+    const input = document.getElementById("username")
+    console.log(input)
+    input.value="tabinda"
+    input.addEventListener("input",function(){
+      console.log(input.value)
+    })
+
+    const heading = document.getElementById("heading")
+    heading.textContent = "DOM learning"
+    heading.classList.add("blue","big")
+    heading.classList.remove("big")
+    if(heading.classList.contains("red")){
+      console.log("exists")
+    }
+    // heading.style.color ="red"
+    // heading.style.backgroundColor="blue"
+
+    const boxes = document.getElementsByClassName("box")
+    console.log(boxes[0])
+    boxes[1].textContent = "updated"
+
+    const headings = document.getElementsByTagName("h1")
+    console.log(headings)
+    headings[0].textContent = "Heading updated"
+
+    const itemm = document.querySelector(".box")
+    console.log(itemm)
+
+    const items = document.querySelectorAll(".box")
+    console.log(items)
+    items.forEach(item=>{
+      console.log(item.textContent)
+    })
+
+    const container = document.getElementById("container")
+    container.innerHTML=  "<pre> this is pre tag in place of div container</pre>"
+
+    const link = document.querySelector("a")
+    console.log(link.getAttribute("href"))
+
+    const newpara = document.createElement("h3")
+    newpara.textContent="heading 3"
+    document.getElementById("container2").appendChild(newpara)
+
+    const para = document.getElementById("para")
+    para.remove()
+
+
+
+
+  </script>
+</body>
+</html>

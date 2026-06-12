@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="list">
+            <li>apple</li>
+            <li>mango</li>
+            <li>banana</li>
+        </ul>
+
+        <a href="www.google.com">click</a>
+    </div>
+
+    <!-- <div id="grandparent">
+        <div id="parent">
+             <button id="child">Click me</button>
+        </div> -->
+
+    <!-- capturing -->
+     <!-- window->document->HTML->BODY->DIV->Button -->
+
+
+
+    
+
+    <script>
+        const list = document.getElementById("list")
+        list.addEventListener("click",(e)=>{
+            console.log(e.currentTarget)
+            console.log(e.target)
+        })
+
+    const a = document.querySelector("a")
+    a.addEventListener("click",(e)=>{
+        e.preventDefault()
+    })
+
+        // const grandparent = document.getElementById("grandparent")
+        // const parent = document.getElementById("parent")
+        // const child = document.getElementById("child")
+
+        // grandparent.addEventListener("click",()=>{
+        //     console.log("grand parent");
+            
+        // })
+        
+        // parent.addEventListener("click",()=>{
+        //     console.log(" parent");
+            
+        // })
+        
+        // child.addEventListener("click",(e)=>{
+        //     e.stopImmediatePropagation()
+        //     console.log(" first child");
+            
+        // })
+        
+        //   child.addEventListener("click",(e)=>{
+        //     console.log("Second child");
+            
+        // })
+        
+
+        //     parent.addEventListener("click",function(){
+        //     console.log("parent clicked")
+        // })
+
+        //  child.addEventListener("click",function(){
+        //     console.log("child clicked")
+        // })
+
+        // parent.addEventListener("click",(e)=>{
+        //     console.log("target")
+        //     console.log(e.target)
+
+        //     console.log("current target")
+        //     console.log(e.currentTarget)
+
+        // })
+        // child.addEventListener("click",(event)=>{
+        //     console.log(event.target)
+        // })
+
+       
+
+    </script>
+</body>
+</html>
