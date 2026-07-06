@@ -2,8 +2,8 @@
 
 **Course documentation** · *From first HTML tag through JavaScript foundations*
 
-> A structured **6 week** journey from HTML and CSS through JavaScript and LeetCode practice.
-
+> A structured **12-13 week** journey from HTML and CSS through JavaScript and LeetCode practice and finish on MongoDB and Full Stack Project.
+-
 ---
 
 ## 📋 Course at a glance
@@ -11,7 +11,7 @@
 | | |
 |:---|:---|
 | **Course title** | A Step Into Web Development |
-| **Duration** | 6 weeks |
+| **Duration** | 12-13 weeks |
 | **Format** | Phased curriculum with daily topics and hands-on practice |
 
 ---
@@ -20,8 +20,9 @@
 
 | Role | Name(s) |
 |:---|:---|
-| **Supervisors** | Usama Zafar |
-| **Trainers** | Alisha Fatima, Sikander Nawaz, Tabinda Noor |
+| **Supervisor** | Usama Zafar |
+| **Trainers** (Phase I) | Alisha Fatima, Sikander Nawaz, Tabinda Noor |
+| **Trainers** (Phase II) | Abdul Rehman, Beena Syed, Mujeeb ur Reham, Sikander Nawaz, Tabinda Noor |
 | **Moderators** | Aliza Tariq, Laika Butt, Mubir Shami |
 
 ---
@@ -30,8 +31,8 @@
 
 ```mermaid
 flowchart LR
-  P1[Phase 01<br/>HTML · GitHub · CSS · Figma]
-  P2[Phase 02<br/>JavaScript · LeetCode]
+  P1[Phase 01<br/>HTML · GitHub · CSS · Figma . JavaScript . LeetCode]
+  P2[Phase 02<br/>ReactJS . ExpressJS . NodeJS . MongoDB]
   P1 --> P2
 ```
 
@@ -44,7 +45,7 @@ flowchart LR
 
 ## 🎨 Phase 01 — HTML, GitHub, CSS & Figma
 
-*Foundations of the web, version control, styling, and design handoff.*
+*Foundations of the web, version control, styling, and design handoff. Core programming, the DOM, modern JS, and problem-solving practice.*
 
 ### 📅 Week 01
 
@@ -75,12 +76,6 @@ flowchart LR
 | **D3** | Tailwind CSS · Q&A |
 | **D4** | Figma |
 | **D5** | Figma |
-
----
-
-## ⚡ Phase 02 — JavaScript & LeetCode
-
-*Core programming, the DOM, modern JS, and problem-solving practice.*
 
 ### 📅 Week 04
 
