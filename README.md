@@ -1,6 +1,6 @@
 # A Step Into Web Development
 
-**Course documentation** · *From first HTML tag through JavaScript foundations*
+**Course documentation** · *From first HTML tag through JavaScript foundations to Full Stack Developement*
 
 > A structured **12-13 week** journey from HTML and CSS through JavaScript and LeetCode practice and finish on MongoDB and Full Stack Project.
 -
