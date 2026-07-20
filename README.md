@@ -22,7 +22,7 @@
 |:---|:---|
 | **Supervisor** | Usama Zafar |
 | **Trainers** (Phase I) | Alisha Fatima, Sikander Nawaz, Tabinda Noor |
-| **Trainers** (Phase II) | Abdul Rehman, Beena Syed, Mujeeb ur Reham, Sikander Nawaz, Tabinda Noor |
+| **Trainers** (Phase II) | Mujeeb ur Reham, Sikander Nawaz, Tabinda Noor |
 | **Moderators** | Aliza Tariq, Laika Butt, Mubir Shami |
 
 ---
